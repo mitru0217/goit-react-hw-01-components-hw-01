@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
-
+import { Title } from 'components/Section/Section.styled';
+import { Container } from 'components/Section/Section.styled';
 function Section({ title, children }) {
   return (
-    <section class="statistics">
-      {title && <h2 class="title">Upload stats</h2>}
+    <Container>
+      {title && <Title class="title">Upload stats</Title>}
       {children}
-    </section>
+    </Container>
   );
 }
 

@@ -7,6 +7,7 @@ import user from '../../user.json';
 import data from '../../data.json';
 import friends from '../../friends.json';
 import css from '../App/App.module.css';
+// import { Container } from 'components/Section/Section.styled';
 
 export default function App() {
   return (
@@ -28,10 +29,12 @@ export default function App() {
         <Section title="Upload stats">
           <StatList stats={data} />
         </Section>
-        <Section>
-          <StatList stats={data} />
-        </Section>
       </div>
+
+      {/* <Container>
+        <StatList stats={data} />
+      </Container> */}
+
       <div>
         <h2>3 - Список друзів</h2>
         <FriendList friends={friends} />
