@@ -11,7 +11,7 @@ const StatList = ({ stats }) => {
     <List>
       {stats.map(stat => (
         <Item key={stat.id}>
-          <Label class="label">{stat.label}</Label>
+          <Label>{stat.label}</Label>
           <Percentage>{stat.percentage}%</Percentage>
         </Item>
       ))}

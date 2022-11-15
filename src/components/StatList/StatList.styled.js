@@ -7,7 +7,6 @@ export const List = styled.ul`
   list-style: none;
   display: inline-flex;
   align-items: center;
-  ${'' /* justify-content: space-around; */}
   width: 300px;
 `;
 export const Item = styled.li`

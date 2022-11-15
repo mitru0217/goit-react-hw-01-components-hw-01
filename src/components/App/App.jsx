@@ -2,10 +2,12 @@ import Description from '../Description/Description';
 import Stats from '../Stats/Stats';
 import Section from '../Section/Section';
 import StatList from '../StatList/StatList';
-import FriendList from '../FriendList/FriendList';
+import { FriendList } from '../FriendList/FriendList';
+import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
 import user from '../../user.json';
 import data from '../../data.json';
 import friends from '../../friends.json';
+import transactions from '../../transactions.json';
 import css from '../App/App.module.css';
 // import { Container } from 'components/Section/Section.styled';
 
@@ -30,14 +32,11 @@ export default function App() {
           <StatList stats={data} />
         </Section>
       </div>
-
-      {/* <Container>
-        <StatList stats={data} />
-      </Container> */}
-
       <div>
-        <h2>3 - Список друзів</h2>
         <FriendList friends={friends} />
+      </div>
+      <div>
+        <TransactionHistory items={transactions} />
       </div>
     </div>
   );
